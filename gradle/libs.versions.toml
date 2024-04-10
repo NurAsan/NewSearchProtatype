@@ -23,6 +23,8 @@ dagger = "2.50"
 javax-inject = "1"
 okhttp = "4.12.0"
 jakarta-inject = "2.0.1"
+coil = "2.6.0"
+detekt = "1.23.3"
 
 [libraries]
 
@@ -76,6 +78,9 @@ okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-intercepto
 javax-inject = {module = "javax.inject:javax.inject",version.ref = "javax-inject"}
 jakarta-inject = {module = "jakarta.inject:jakarta.inject-api",version.ref = "jakarta-inject"}
 
+coil-core = {module = "io.coil-kt:coil", version.ref= "coil"}
+coil-compose = {module = "io.coil-kt:coil-compose", version.ref= "coil"}
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -85,4 +90,6 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
 dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "dagger"}
 kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin"}
+androidx-room = {id = "androidx.room", version.ref = "room"}
+detekt = {id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
 
