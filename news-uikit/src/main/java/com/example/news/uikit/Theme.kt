@@ -38,9 +38,10 @@ private val LightColorScheme = lightColorScheme(
     onTertiary = Color.White,
     onBackground = Color(0xFF1C1B1F),
     onSurface = Color(0xFF1C1B1F),
-    */
+     */
 )
 
+@Suppress("FunctionNaming")
 @Composable
 fun NewsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -71,8 +72,8 @@ fun NewsTheme(
         typography = Typography,
         content = content
     )
-
 }
+
 object NewsTheme {
     /**
      * Retrieves the current [ColorScheme] at the call site's position in the hierarchy.
