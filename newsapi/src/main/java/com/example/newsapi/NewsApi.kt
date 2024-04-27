@@ -36,9 +36,8 @@ fun NewsApi(
     baseUrl: String,
     apiKey: String,
     okHttpClient: OkHttpClient? = null,
-    json: Json = Json
 ): NewsApi {
-    return retrofit(baseUrl, apiKey, okHttpClient, json).create()
+    return retrofit(baseUrl, apiKey, okHttpClient).create()
 }
 
 private val json1 = Json {
@@ -52,7 +51,7 @@ private fun retrofit(
     baseUrl: String,
     apiKey: String,
     okHttpClient: OkHttpClient? = null,
-    json: Json,
+
 ): Retrofit {
     val jsonConverterFactory = json1.asConverterFactory("application/json".toMediaType())
 
